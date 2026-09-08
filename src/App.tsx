@@ -1,4 +1,4 @@
-import { FileText, Mail, LayoutDashboard, ClipboardList, BarChart3, Globe } from "lucide-react"
+import { FileText, Mail, LayoutDashboard, ClipboardList, BarChart3, ChartGantt, Workflow, Globe } from "lucide-react"
 import { useT, useI18nStore } from "./lib/i18n"
 
 const iconMap = {
@@ -7,6 +7,8 @@ const iconMap = {
   LayoutDashboard,
   ClipboardList,
   BarChart3,
+  ChartGantt,
+  Workflow,
   Globe,
 } as const
 
@@ -54,6 +56,20 @@ function App() {
       statusKey: "site.status.live",
     },
     {
+      icon: "ChartGantt",
+      nameKey: "site.tool.gantt.name",
+      subdomain: "gantt.ohmy.lat",
+      descKey: "site.tool.gantt.desc",
+      statusKey: "site.status.live",
+    },
+    {
+      icon: "Workflow",
+      nameKey: "site.tool.diagrams.name",
+      subdomain: "diagrams.ohmy.lat",
+      descKey: "site.tool.diagrams.desc",
+      statusKey: "site.status.live",
+    },
+    {
       icon: "Globe",
       nameKey: "site.tool.site.name",
       subdomain: "ohmy.lat",
@@ -81,7 +97,7 @@ function App() {
           {t('site.subtitle')}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
           {tools.map((tool) => {
             const Icon = iconMap[tool.icon]
             return (
@@ -121,7 +137,7 @@ function App() {
         <div className="w-px h-10 bg-primary/10 my-10" />
 
         <a
-          href="https://github.com/itica-lat"
+          href="https://github.com/ohmyapps-org"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-40 hover:opacity-100 transition-opacity duration-200"
