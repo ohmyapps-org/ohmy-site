@@ -1,12 +1,12 @@
 {
   "name": "ohmy-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint --ext .ts,.tsx src",
+    "build": "tsc -b && vite build && bun scripts/prerender.ts",
+    "lint": "oxlint src",
     "preview": "vite preview"
   },
   "dependencies": {

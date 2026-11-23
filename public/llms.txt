@@ -1,0 +1,32 @@
+# OhMy
+
+> The landing page and portal for the OhMy suite: local-first, browser-only tools
+> for students and professionals. No account required, no backend.
+
+OhMy is a family of focused productivity tools. Every product runs entirely in
+the browser (or with a small optional server for OAuth) and stores its data
+locally — no sign-up, no upload of your work to a third party.
+
+## Products
+
+- **OhMyDocs** (https://docs.ohmy.lat): local-first document editor with
+  editorial-grade output, block composition, Markdown round-trip and custom
+  branding profiles.
+- **OhMyMail** (https://mail.ohmy.lat): email template composer. Markdown in,
+  branded HTML out.
+- **OhMyGrid** (https://grid.ohmy.lat): visual bento-grid designer. Exports
+  React TSX or standalone HTML.
+- **OhMyForms** (https://forms.ohmy.lat): browser-only form builder with a
+  drag-and-drop editor and per-form response tables.
+- **OhMyCharts** (https://charts.ohmy.lat): Scrum burndown calculator with four
+  input modes.
+- **OhMyGantt** (https://gantt.ohmy.lat): Gantt timelines from GitHub Projects
+  v2, Trello boards or manual task lists.
+- **OhMyDiagrams** (https://diagrams.ohmy.lat): visual UML 2.5 use-case diagram
+  editor with a validation checklist evaluated live on the canvas.
+
+## Contact
+
+- Email: hola@wefaber.net
+- Site: https://ohmy.lat
+- GitHub: https://github.com/ohmyapps-org

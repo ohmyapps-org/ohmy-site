@@ -1,5 +1,5 @@
 import { FileText, Mail, LayoutDashboard, ClipboardList, BarChart3, ChartGantt, Workflow, Globe } from "lucide-react"
-import { useT, useI18nStore } from "./lib/i18n"
+import { useT, useI18nStore, type TranslationKey } from "./lib/i18n"
 
 const iconMap = {
   FileText,
@@ -19,7 +19,7 @@ function App() {
   const locale = useI18nStore((s) => s.locale)
   const setLocale = useI18nStore((s) => s.setLocale)
 
-  const tools: { icon: IconName; nameKey: string; subdomain: string; descKey: string; statusKey: string }[] = [
+  const tools: { icon: IconName; nameKey: TranslationKey; subdomain: string; descKey: TranslationKey; statusKey: TranslationKey }[] = [
     {
       icon: "FileText",
       nameKey: "site.tool.docs.name",
@@ -111,14 +111,14 @@ function App() {
                 <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col gap-1">
                   <h3 className="font-header text-lg text-primary group-hover:text-primary/90 transition-colors">
-                    {t(tool.nameKey as any)}
+                    {t(tool.nameKey)}
                   </h3>
                   <p className="font-body text-sm text-text/60 leading-relaxed">
-                    {t(tool.descKey as any)}
+                    {t(tool.descKey)}
                   </p>
                 </div>
                 <span className="font-mono text-[10px] tracking-wider uppercase text-primary/40 border border-primary/10 rounded-full px-2.5 py-0.5 mt-auto">
-                  {t(tool.statusKey as any)}
+                  {t(tool.statusKey)}
                 </span>
               </a>
             )

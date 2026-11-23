@@ -4,7 +4,74 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OhMy! - Site</title>
+    <title>OhMy: local-first productivity tools, no account</title>
+    <meta
+      name="description"
+      content="OhMy is a suite of browser-only tools: documents, email templates, forms, grids, charts, Gantt and UML diagrams. No sign-up, your data stays local."
+    />
+    <link rel="canonical" href="https://ohmy.lat/" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OhMy" />
+    <meta property="og:title" content="OhMy: local-first productivity tools, no account" />
+    <meta
+      property="og:description"
+      content="Browser-only tools for documents, email templates, forms, grids, charts, Gantt and UML diagrams. No sign-up, your data stays local."
+    />
+    <meta property="og:url" content="https://ohmy.lat/" />
+    <meta property="og:image" content="https://ohmy.lat/Banner_OhMy_Alt.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OhMy: local-first productivity tools, no account" />
+    <meta
+      name="twitter:description"
+      content="Browser-only tools for documents, email templates, forms, grids, charts, Gantt and UML diagrams. No sign-up."
+    />
+    <meta name="twitter:image" content="https://ohmy.lat/Banner_OhMy_Alt.png" />
+
+    <!-- Structured data for search and answer engines. %BUILD_DATE% is filled by scripts/prerender.ts. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://ohmy.lat/#org",
+            "name": "OhMy",
+            "url": "https://ohmy.lat/",
+            "logo": "https://ohmy.lat/favicon.png",
+            "email": "hola@wefaber.net",
+            "sameAs": ["https://github.com/ohmyapps-org", "https://wefaber.net"],
+            "parentOrganization": { "@type": "Organization", "name": "WeFaber", "url": "https://wefaber.net" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ohmy.lat/#website",
+            "url": "https://ohmy.lat/",
+            "name": "OhMy",
+            "inLanguage": ["en", "es"],
+            "publisher": { "@id": "https://ohmy.lat/#org" },
+            "dateModified": "%BUILD_DATE%"
+          },
+          {
+            "@type": "ItemList",
+            "name": "OhMy tools",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "item": { "@type": "WebApplication", "name": "OhMyDocs", "url": "https://docs.ohmy.lat/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Local-first document editor with editorial-grade output, Markdown round-trip and custom branding." } },
+              { "@type": "ListItem", "position": 2, "item": { "@type": "WebApplication", "name": "OhMyMail", "url": "https://mail.ohmy.lat/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Email template composer: Markdown in, branded HTML out." } },
+              { "@type": "ListItem", "position": 3, "item": { "@type": "WebApplication", "name": "OhMyGrid", "url": "https://grid.ohmy.lat/", "applicationCategory": "DesignApplication", "operatingSystem": "Any", "description": "Visual bento-grid designer that exports React TSX or HTML." } },
+              { "@type": "ListItem", "position": 4, "item": { "@type": "WebApplication", "name": "OhMyForms", "url": "https://forms.ohmy.lat/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Browser-only form builder with per-form response tables, no account." } },
+              { "@type": "ListItem", "position": 5, "item": { "@type": "WebApplication", "name": "OhMyCharts", "url": "https://charts.ohmy.lat/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Scrum burndown calculator with four input modes." } },
+              { "@type": "ListItem", "position": 6, "item": { "@type": "WebApplication", "name": "OhMyGantt", "url": "https://gantt.ohmy.lat/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Gantt timelines from GitHub Projects v2, Trello boards or manual tasks." } },
+              { "@type": "ListItem", "position": 7, "item": { "@type": "WebApplication", "name": "OhMyDiagrams", "url": "https://diagrams.ohmy.lat/", "applicationCategory": "DesignApplication", "operatingSystem": "Any", "description": "UML 2.5 use-case diagram editor with live validation." } }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
